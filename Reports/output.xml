@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.12.3 on win32)" generated="2025-01-26T00:18:37.947415" rpa="false" schemaversion="5">
+<suite id="s1" name="TestHomePage" source="C:\Users\sunma\PycharmProjects\RobortFramework_POM\TestCases\TestHomePage.robot">
+<test id="s1-t1" name="TestCase-1" line="12">
+<kw name="Start automation" owner="HomePage">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-26T00:18:38.310962" level="INFO">Opening browser 'chrome' to base url 'https://automationplayground.com/crm/index.html'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-26T00:18:38.310962" elapsed="2.836683"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-26T00:18:41.147645" elapsed="0.038569"/>
+</kw>
+<kw name="Set Browser Implicit Wait" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-01-26T00:18:41.187046" elapsed="0.002011"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-01-26T00:18:41.313281" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../ScreenShots/img_1.png"&gt;&lt;img src="../ScreenShots/img_1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>../ScreenShots/img_1.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-01-26T00:18:41.189057" elapsed="0.124224"/>
+</kw>
+<tag>Start</tag>
+<doc>Start automation</doc>
+<status status="PASS" start="2025-01-26T00:18:38.310962" elapsed="3.002319"/>
+</kw>
+<status status="PASS" start="2025-01-26T00:18:38.310962" elapsed="3.002319"/>
+</test>
+<test id="s1-t2" name="TestCase-2" line="15">
+<kw name="Sign-in into the credentials" owner="HomePage">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2025-01-26T00:18:41.313281" level="INFO">Clicking link 'name=sign-in-link'.</msg>
+<arg>name=sign-in-link</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-26T00:18:41.313281" elapsed="0.872476"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-01-26T00:18:42.327241" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../ScreenShots/img_2.png"&gt;&lt;img src="../ScreenShots/img_2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>../ScreenShots/img_2.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-01-26T00:18:42.185757" elapsed="0.141484"/>
+</kw>
+<tag>Click sign-in link</tag>
+<doc>Sign-in into the credentials</doc>
+<status status="PASS" start="2025-01-26T00:18:41.313281" elapsed="1.013960"/>
+</kw>
+<status status="PASS" start="2025-01-26T00:18:41.313281" elapsed="1.013960"/>
+</test>
+<test id="s1-t3" name="TestCase-3" line="18">
+<kw name="Add Sign-up credentials" owner="HomePage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-26T00:18:42.328535" level="INFO">Typing text 'sunmathi@gmail.com' into text field 'id=email-id'.</msg>
+<arg>id=email-id</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-26T00:18:42.328535" elapsed="0.282083"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-26T00:18:42.612633" level="INFO">Typing text '123dlf' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-26T00:18:42.610618" elapsed="0.147957"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-01-26T00:18:42.758575" level="INFO">Clicking button 'id=submit-id'.</msg>
+<arg>id=submit-id</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-26T00:18:42.758575" elapsed="0.381145"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-01-26T00:18:43.478301" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../ScreenShots/img_3.png"&gt;&lt;img src="../ScreenShots/img_3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>../ScreenShots/img_3.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-01-26T00:18:43.139720" elapsed="0.338581"/>
+</kw>
+<tag>Enter username password</tag>
+<doc>Add Sign-up credentials</doc>
+<status status="PASS" start="2025-01-26T00:18:42.328535" elapsed="1.149766"/>
+</kw>
+<status status="PASS" start="2025-01-26T00:18:42.328535" elapsed="1.149766"/>
+</test>
+<test id="s1-t4" name="TestCase-4" line="21">
+<kw name="Add a new user" owner="HomePage">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2025-01-26T00:18:43.480344" level="INFO">Clicking link 'id=new-customer'.</msg>
+<arg>id=new-customer</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-26T00:18:43.480344" elapsed="0.715069"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-26T00:18:44.195413" level="INFO">Typing text 'Dhanu@yahoo.com' into text field 'id=EmailAddress'.</msg>
+<arg>id=EmailAddress</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-26T00:18:44.195413" elapsed="0.337847"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-26T00:18:44.534264" level="INFO">Typing text 'Dhansekaran' into text field 'id=FirstName'.</msg>
+<arg>id=FirstName</arg>
+<arg>${FIRST_NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-26T00:18:44.533260" elapsed="0.246139"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-26T00:18:44.779399" level="INFO">Typing text 'Manickam' into text field 'id=LastName'.</msg>
+<arg>id=LastName</arg>
+<arg>${LAST_NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-26T00:18:44.779399" elapsed="0.183899"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-26T00:18:44.963298" level="INFO">Typing text 'Chennai' into text field 'id=City'.</msg>
+<arg>id=City</arg>
+<arg>${CITY}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-26T00:18:44.963298" elapsed="0.217024"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2025-01-26T00:18:45.180322" level="INFO">Selecting options from selection list 'id=StateOrRegion' by value AK.</msg>
+<arg>id=StateOrRegion</arg>
+<arg>AK</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2025-01-26T00:18:45.180322" elapsed="0.131024"/>
+</kw>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<msg time="2025-01-26T00:18:45.311346" level="INFO">Selecting 'male' from radio button 'gender'.</msg>
+<arg>gender</arg>
+<arg>male</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="PASS" start="2025-01-26T00:18:45.311346" elapsed="0.118576"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-01-26T00:18:45.429922" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
+<arg>xpath=//button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-26T00:18:45.429922" elapsed="0.457422"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-01-26T00:18:46.045620" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../ScreenShots/img_4.png"&gt;&lt;img src="../ScreenShots/img_4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>../ScreenShots/img_4.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-01-26T00:18:45.887344" elapsed="0.158276"/>
+</kw>
+<tag>Add new user details</tag>
+<doc>Add a new user</doc>
+<status status="PASS" start="2025-01-26T00:18:43.480344" elapsed="2.565276"/>
+</kw>
+<status status="PASS" start="2025-01-26T00:18:43.480344" elapsed="2.565276"/>
+</test>
+<test id="s1-t5" name="TestCase-5" line="24">
+<kw name="Confirm the new user" owner="HomePage">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Success! New customer added.</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-01-26T00:18:46.045620" elapsed="0.017171"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-01-26T00:18:46.224912" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../ScreenShots/img_5.png"&gt;&lt;img src="../ScreenShots/img_5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>../ScreenShots/img_5.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-01-26T00:18:46.062791" elapsed="0.162121"/>
+</kw>
+<tag>Confirm user addition</tag>
+<doc>Confirm the new user</doc>
+<status status="PASS" start="2025-01-26T00:18:46.045620" elapsed="0.179292"/>
+</kw>
+<status status="PASS" start="2025-01-26T00:18:46.045620" elapsed="0.179292"/>
+</test>
+<test id="s1-t6" name="TestCase-6" line="27">
+<kw name="Shutdown automation" owner="HomePage">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-01-26T00:18:46.233439" elapsed="2.189612"/>
+</kw>
+<tag>Shutdown</tag>
+<doc>Shutdown automation</doc>
+<status status="PASS" start="2025-01-26T00:18:46.233439" elapsed="2.189612"/>
+</kw>
+<status status="PASS" start="2025-01-26T00:18:46.224912" elapsed="2.198139"/>
+</test>
+<doc>Test-Suite for playground page automation</doc>
+<status status="PASS" start="2025-01-26T00:18:37.947415" elapsed="10.475636"/>
+</suite>
+<statistics>
+<total>
+<stat pass="6" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="TestHomePage" id="s1" pass="6" fail="0" skip="0">TestHomePage</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
